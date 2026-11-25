@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>(주)세주농업회사법인 — 함께 성장하는 농업의 미래</title>
+<meta name="description" content="여주고구마 계약재배 전문 (주)세주농업회사법인. 안정적인 판로 확보, 시세 변동 위험 감소, 전문적인 재배 컨설팅으로 농가와 함께 성장합니다.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="(주)세주농업회사법인 — 함께 성장하는 농업의 미래">
+<meta property="og:description" content="여주고구마 계약재배 · 안정적인 판로 확보 · 전문적인 재배 컨설팅">
+<meta property="og:image" content="assets/img/field-panorama.jpg">
+<meta name="theme-color" content="#0f1f24">
+<link rel="icon" href="assets/logo/symbol-dark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+html,body{width:100%;overflow-x:hidden}
+body{-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer;border:0;background:none}
+
+:root{
+  --paper:#f5f1ea; --paper2:#ece6da; --ink:#0f1f24; --ink2:#18303a;
+  --plum:#8c3459; --plum-soft:#b35a7d; --gold:#e8ad2e; --gold-soft:#f2cf7a;
+  --leaf:#3f6b3a; --warm:#857b6c; --body:#4a4f50; --line:rgba(15,31,36,.14);
+  --serif:'Noto Serif KR',serif; --sans:'Pretendard',-apple-system,sans-serif;
+}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.7;letter-spacing:-.01em;word-break:keep-all}
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+
+/* NAV */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:.4s;color:#fff}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:78px}
+.nav.scrolled{background:rgba(245,241,234,.95);backdrop-filter:blur(10px);color:var(--ink);box-shadow:0 1px 0 var(--line)}
+.brand{display:flex;align-items:center;gap:12px;font-weight:600;font-size:19px;letter-spacing:-.02em}
+.brand .sym{width:36px;height:36px;position:relative;flex:none}
+.brand .sym img{position:absolute;inset:0;width:100%;height:100%;transition:opacity .3s}
+.brand .sym .dk{opacity:0}
+.nav.scrolled .brand .sym .wh{opacity:0}
+.nav.scrolled .brand .sym .dk{opacity:1}
+.menu{display:flex;gap:44px;font-size:15px;font-weight:500}
+.menu a{position:relative;padding:6px 0;opacity:.85;transition:.2s}
+.menu a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1.5px;background:currentColor;transition:.3s}
+.menu a:hover,.menu a.on{opacity:1}
+.menu a:hover::after,.menu a.on::after{right:0}
+.nav .cta{padding:10px 18px;border:1px solid currentColor;font-size:13px;font-weight:600;transition:.3s}
+.nav:not(.scrolled) .cta:hover{background:#fff;color:var(--ink)}
+.nav.scrolled .cta:hover{background:var(--ink);color:var(--paper)}
+.burger{display:none;width:28px;height:18px;position:relative}
+.burger span,.burger::before,.burger::after{content:"";position:absolute;left:0;right:0;height:1.5px;background:currentColor}
+.burger::before{top:0}.burger span{top:8px}.burger::after{bottom:0}
+
+/* HERO */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;color:#fff;background:#0b0b0c url('assets/img/sp-dark.jpg') right center/cover no-repeat;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,8,9,.85) 0%,rgba(8,8,9,.4) 45%,transparent 70%)}
+.hero .wrap{position:relative;width:100%;padding-top:60px}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.18em;display:flex;align-items:center;gap:14px;margin-bottom:28px}
+.eyebrow::before{content:"";width:40px;height:1px;background:currentColor}
+.hero .eyebrow{color:var(--gold-soft)}
+.hero h1{font-family:var(--serif);font-weight:300;font-size:clamp(46px,7vw,104px);line-height:1.14;letter-spacing:-.045em;margin-bottom:30px}
+.hero h1 b{font-weight:600;color:var(--gold)}
+.hero p{font-size:18px;line-height:1.8;color:rgba(255,255,255,.82);max-width:500px;margin-bottom:40px}
+.hero-keys{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:44px}
+.hero-keys span{padding:8px 16px;border:1px solid rgba(242,207,122,.45);color:var(--gold-soft);font-size:14px;font-weight:500}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 26px;font-size:15px;font-weight:600;transition:.3s}
+.btn-g{background:var(--gold);color:var(--ink)}
+.btn-g:hover{background:#fff}
+.btn-o{border:1px solid rgba(255,255,255,.5);color:#fff}
+.btn-o:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.btn-d{background:var(--ink);color:var(--paper)}
+.btn-d:hover{background:var(--plum)}
+.scroll-cue{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);font-size:11px;letter-spacing:.3em;color:rgba(255,255,255,.7);display:flex;flex-direction:column;align-items:center;gap:10px;z-index:2}
+.scroll-cue::after{content:"";width:1px;height:32px;background:rgba(255,255,255,.5);animation:cue 2s ease-in-out infinite}
+@keyframes cue{50%{transform:translateY(8px);opacity:.3}}
+
+/* SECTION HEAD */
+section.sec{padding:140px 0}
+.s-head{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:end;margin-bottom:72px}
+.s-head .num{font-size:14px;color:var(--plum);font-weight:600;letter-spacing:.06em;margin-bottom:18px;display:flex;gap:12px;align-items:center}
+.s-head .num::after{content:"";width:40px;height:1px;background:currentColor}
+.s-head h2{font-family:var(--serif);font-weight:300;font-size:clamp(36px,4.6vw,62px);line-height:1.24;letter-spacing:-.045em}
+.s-head h2 b{font-weight:600;color:var(--plum)}
+.s-head p{font-size:17px;color:var(--body);line-height:1.85;max-width:520px}
+.sub-h{display:flex;align-items:baseline;gap:16px;margin-bottom:32px}
+.sub-h h3{font-family:var(--serif);font-weight:500;font-size:30px;letter-spacing:-.04em}
+.sub-h span{font-size:13px;font-weight:600;letter-spacing:.14em;color:var(--warm)}
+
+/* ABOUT */
+.lede{padding:130px 0 40px;text-align:center}
+.lede .sym-mark{width:64px;margin:0 auto 34px}
+.lede blockquote{font-family:var(--serif);font-weight:300;font-size:clamp(28px,3.4vw,46px);line-height:1.55;letter-spacing:-.04em;max-width:900px;margin:0 auto}
+.lede blockquote b{font-weight:500;color:var(--plum)}
+.about-intro{display:grid;grid-template-columns:1.1fr 1fr;gap:72px;align-items:center}
+.about-photo{position:relative}
+.about-photo img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.about-photo .inset{position:absolute;right:-40px;bottom:-56px;width:46%;border:8px solid var(--paper)}
+.about-photo .inset img{aspect-ratio:4/3}
+.values{display:grid}
+.value{display:grid;grid-template-columns:56px 1fr;gap:18px;padding:28px 0;border-top:1px solid var(--line);transition:.3s}
+.value:last-child{border-bottom:1px solid var(--line)}
+.value:hover{padding-left:10px}
+.value .n{font-family:var(--serif);font-size:28px;color:var(--plum);line-height:1.1}
+.value h4{font-family:var(--serif);font-weight:500;font-size:22px;letter-spacing:-.03em;margin-bottom:6px}
+.value p{font-size:15.5px;color:var(--body)}
+
+/* Premium (우수성) */
+.premium{margin-top:160px;position:relative;background:var(--gold) url('assets/img/sp-yellow.jpg') left center/cover no-repeat;min-height:560px;display:flex;align-items:center}
+.premium .box{margin-left:auto;width:min(520px,100%);padding:64px 56px;margin-right:6%}
+.premium .k{font-size:13px;font-weight:700;letter-spacing:.16em;color:var(--ink);opacity:.7;margin-bottom:18px}
+.premium h3{font-family:var(--serif);font-weight:300;font-size:clamp(34px,3.8vw,52px);line-height:1.25;letter-spacing:-.045em;margin-bottom:22px;color:var(--ink)}
+.premium h3 b{font-weight:600}
+.premium p{font-size:17px;line-height:1.85;color:#2b2a22;margin-bottom:30px}
+.premium ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.premium li{padding:14px 16px;background:rgba(15,31,36,.9);color:var(--gold-soft);font-size:14.5px;font-weight:600}
+
+/* Distribution */
+.dist{margin-top:140px}
+.dist-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:64px;align-items:start}
+.dist-copy p.lead{font-size:18px;line-height:1.85;color:var(--body);margin-bottom:36px}
+.flow{list-style:none;counter-reset:f;border-top:1px solid var(--ink)}
+.flow li{counter-increment:f;display:grid;grid-template-columns:52px 1fr auto;gap:12px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}
+.flow li::before{content:counter(f,decimal-leading-zero);font-family:var(--serif);color:var(--plum);font-size:18px}
+.flow b{font-size:17px;font-weight:600}
+.flow span{font-size:14px;color:var(--warm)}
+.dist-imgs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.dist-imgs img{width:100%;height:100%;object-fit:cover}
+.dist-imgs .big{grid-column:1/-1;aspect-ratio:16/7}
+.dist-imgs .sm{aspect-ratio:4/3}
+.dist-imgs .note{background:var(--ink);color:var(--paper);padding:26px;display:flex;flex-direction:column;justify-content:flex-end}
+.dist-imgs .note b{font-family:var(--serif);font-weight:500;font-size:22px;color:var(--gold-soft);margin-bottom:6px}
+.dist-imgs .note span{font-size:14px;color:rgba(245,241,234,.72)}
+
+/* CONTRACT */
+.contract{background:var(--ink);color:var(--paper)}
+.contract .s-head .num{color:var(--gold)}
+.contract .s-head h2 b{color:var(--gold)}
+.contract .s-head p{color:rgba(245,241,234,.75)}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(245,241,234,.15);margin-bottom:120px}
+.pillar{background:var(--ink);padding:44px 36px 40px;transition:.3s}
+.pillar:hover{background:var(--ink2)}
+.pillar .n{font-family:var(--serif);font-size:15px;color:var(--gold);margin-bottom:56px}
+.pillar h4{font-family:var(--serif);font-weight:500;font-size:28px;letter-spacing:-.04em;margin-bottom:12px}
+.pillar p{font-size:15px;color:rgba(245,241,234,.7);line-height:1.75}
+.contract .sub-h span{color:rgba(245,241,234,.5)}
+.proc-intro{font-size:17px;color:rgba(245,241,234,.75);max-width:640px;margin:-14px 0 40px;line-height:1.85}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid rgba(245,241,234,.25)}
+.step{padding:34px 26px 34px 0;position:relative}
+.step:not(:last-child)::after{content:"";position:absolute;right:14px;top:44px;width:8px;height:8px;border-top:1px solid rgba(245,241,234,.5);border-right:1px solid rgba(245,241,234,.5);transform:rotate(45deg)}
+.step .k{font-size:12px;font-weight:700;color:var(--gold);margin-bottom:22px;letter-spacing:.14em}
+.step h5{font-family:var(--serif);font-weight:500;font-size:21px;margin-bottom:10px;letter-spacing:-.03em}
+.step p{font-size:14.5px;color:rgba(245,241,234,.68);line-height:1.7}
+
+.story{margin-top:120px;display:grid;grid-template-columns:1.1fr 1fr;gap:0;background:var(--paper);color:var(--ink)}
+.story .ph{background:url('assets/img/field.jpg') center/cover;min-height:460px}
+.story .tx{padding:60px 56px;display:flex;flex-direction:column;justify-content:center}
+.story .k{font-size:13px;font-weight:700;letter-spacing:.14em;color:var(--plum);margin-bottom:24px}
+.story blockquote{font-family:var(--serif);font-weight:400;font-size:clamp(22px,2.2vw,28px);line-height:1.6;letter-spacing:-.035em;margin-bottom:30px}
+.story blockquote b{font-weight:600;color:var(--plum)}
+.story .who{display:flex;align-items:center;gap:14px;padding-top:24px;border-top:1px solid var(--line)}
+.story .who i{width:44px;height:44px;border-radius:50%;background:var(--plum);color:#fff;display:grid;place-items:center;font-style:normal;font-family:var(--serif);font-weight:500}
+.story .who b{display:block;font-size:16px}
+.story .who span{font-size:13.5px;color:var(--warm)}
+.contract .btns{margin-top:56px}
+
+/* COMMUNITY */
+.comm-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:56px}
+.tabs{display:flex;border-bottom:1px solid var(--ink);margin-bottom:8px;overflow-x:auto}
+.tabs button{padding:14px 22px;font-size:15px;font-weight:500;color:var(--warm);position:relative;white-space:nowrap}
+.tabs button.on{color:var(--ink);font-weight:700}
+.tabs button.on::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--plum)}
+.board{list-style:none}
+.board li{display:grid;grid-template-columns:76px 1fr 96px;gap:16px;align-items:center;padding:20px 4px;border-bottom:1px solid var(--line);cursor:pointer;transition:.2s}
+.board li:hover{background:var(--paper2);padding-left:12px}
+.board .cat{font-size:12px;font-weight:600;color:var(--leaf);border:1px solid var(--leaf);padding:3px 0;text-align:center}
+.board .cat.hot{color:var(--plum);border-color:var(--plum)}
+.board .t{font-size:16px;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.board .d{font-size:13px;color:var(--warm);text-align:right;font-variant-numeric:tabular-nums}
+.board-more{display:inline-flex;margin-top:22px;font-size:14px;font-weight:600;color:var(--plum);gap:8px}
+.board-more:hover{color:var(--ink)}
+.side{display:grid;gap:16px;align-content:start}
+.scard{padding:30px;background:var(--paper2)}
+.scard.img{color:#fff;background:linear-gradient(180deg,rgba(10,20,24,.05) 20%,rgba(10,20,24,.82)),url('assets/img/seedling-lab.jpg') center/cover;min-height:280px;display:flex;flex-direction:column;justify-content:flex-end}
+.scard h4{font-family:var(--serif);font-weight:500;font-size:22px;letter-spacing:-.03em;margin-bottom:8px}
+.scard p{font-size:14.5px;color:var(--body);margin-bottom:16px}
+.scard.img p{color:rgba(255,255,255,.85)}
+.lnk{font-size:14px;font-weight:600;display:inline-flex;gap:8px;color:var(--plum)}
+.scard.img .lnk{color:var(--gold-soft)}
+.lnk::after{content:"→";transition:.2s}
+.scard:hover .lnk::after{transform:translateX(5px)}
+
+/* CLOSING BAND */
+.promise{position:relative;color:#fff;text-align:center;padding:150px 32px;background:url('assets/img/field-panorama.jpg') center/cover}
+.promise::before{content:"";position:absolute;inset:0;background:rgba(10,22,26,.62)}
+.promise > *{position:relative}
+.promise .sym-mark{width:56px;margin:0 auto 30px}
+.promise h2{font-family:var(--serif);font-weight:300;font-size:clamp(34px,4.6vw,62px);line-height:1.3;letter-spacing:-.045em;margin-bottom:22px}
+.promise h2 b{font-weight:600;color:var(--gold)}
+.promise p{font-size:17px;color:rgba(255,255,255,.82);margin-bottom:26px}
+.promise cite{font-style:normal;font-family:var(--serif);font-size:16px;color:var(--gold-soft)}
+
+/* SUPPORT */
+.support{background:var(--paper2)}
+.sup-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:72px}
+.call{border-top:1px solid var(--ink);padding-top:30px;margin-bottom:28px}
+.call .lbl{font-size:14px;color:var(--warm);margin-bottom:6px}
+.call .tel{font-family:var(--serif);font-weight:500;font-size:clamp(40px,4.4vw,56px);letter-spacing:-.02em;color:var(--ink);line-height:1.1;margin-bottom:14px;display:block}
+.call .tel:hover{color:var(--plum)}
+.call .hrs{font-size:15px;color:var(--body)}
+.info{display:grid;gap:0;margin-bottom:44px}
+.info div{display:grid;grid-template-columns:84px 1fr;padding:13px 0;border-bottom:1px solid var(--line);font-size:15px}
+.info dt{color:var(--warm);font-weight:500}
+.info dd{font-weight:500}
+.info a:hover{color:var(--plum)}
+.faq h3{font-family:var(--serif);font-weight:500;font-size:22px;margin-bottom:10px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:20px 36px 20px 0;font-size:16px;font-weight:500;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"Q.";font-family:var(--serif);color:var(--plum);margin-right:10px}
+.faq summary::after{content:"";position:absolute;right:6px;top:28px;width:9px;height:9px;border-right:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink);transform:rotate(45deg);transition:.25s}
+.faq details[open] summary::after{transform:rotate(-135deg);top:32px}
+.faq details p{padding:0 0 22px 30px;font-size:15px;color:var(--body)}
+.form{background:var(--paper);padding:48px;align-self:start}
+.form h3{font-family:var(--serif);font-weight:500;font-size:28px;letter-spacing:-.03em;margin-bottom:6px}
+.form > p{font-size:15px;color:var(--warm);margin-bottom:30px}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:grid;gap:8px;margin-bottom:18px}
+.field > label{font-size:13px;font-weight:600;color:var(--ink)}
+.field input,.field select,.field textarea{width:100%;background:transparent;border:0;border-bottom:1px solid rgba(15,31,36,.3);padding:10px 0;font-size:16px;outline:0;transition:.2s;border-radius:0}
+.field textarea{resize:vertical;min-height:110px;border:1px solid rgba(15,31,36,.3);padding:12px}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--plum)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{cursor:pointer}
+.chips input{display:none}
+.chips span{display:inline-block;padding:8px 16px;border:1px solid rgba(15,31,36,.3);font-size:14px;font-weight:500;color:var(--body);transition:.2s}
+.chips input:checked + span{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.agree{display:flex;gap:10px;align-items:center;font-size:14px;color:var(--body);margin:6px 0 26px}
+.agree input{accent-color:var(--ink);width:16px;height:16px}
+.form .btn{width:100%;justify-content:center;padding:18px}
+.sent{display:none;text-align:center;padding:60px 0}
+.sent b{display:block;font-family:var(--serif);font-weight:500;font-size:28px;color:var(--plum);margin-bottom:10px}
+.form.done form{display:none}.form.done .sent{display:block}
+
+/* FOOTER */
+footer{background:var(--ink);color:rgba(245,241,234,.66);padding:80px 0 36px}
+.foot{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:48px}
+.foot .flogo{display:flex;align-items:center;gap:12px;color:var(--paper);font-size:19px;font-weight:600;margin-bottom:20px}
+.foot .flogo img{width:38px}
+.foot p{font-size:14px;line-height:1.95}
+.foot h5{font-size:14px;font-weight:600;color:var(--paper);margin-bottom:14px}
+.foot a{display:block;padding:3px 0;font-size:14px;transition:.2s}
+.foot a:hover{color:var(--paper)}
+.copy{margin-top:56px;padding-top:24px;border-top:1px solid rgba(245,241,234,.14);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13px;color:rgba(245,241,234,.42)}
+
+.reveal{opacity:0;transform:translateY(36px);transition:1.1s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+.mmenu{position:fixed;inset:0;z-index:60;background:var(--ink);color:var(--paper);display:none;flex-direction:column;justify-content:center;padding:0 32px;gap:8px}
+.mmenu.open{display:flex}
+.mmenu a{font-family:var(--serif);font-size:34px;font-weight:300;padding:8px 0;border-bottom:1px solid rgba(245,241,234,.12)}
+.mmenu button{position:absolute;top:22px;right:22px;font-size:28px;color:var(--paper)}
+
+@media(max-width:1080px){
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .step:not(:last-child)::after{display:none}
+  .about-photo .inset{right:-12px}
+}
+@media(max-width:880px){
+  .wrap{padding:0 20px}
+  .menu,.nav .cta{display:none}
+  .burger{display:block}
+  .nav .wrap{height:64px}
+  .brand{font-size:16px}
+  .hero{background-position:72% center}
+  .hero::before{background:linear-gradient(180deg,rgba(8,8,9,.55),rgba(8,8,9,.82))}
+  section.sec{padding:96px 0}
+  .s-head,.about-intro,.comm-grid,.sup-grid,.dist-grid,.story{grid-template-columns:1fr;gap:36px}
+  .s-head{margin-bottom:48px}
+  .about-photo .inset{display:none}
+  .premium{margin-top:96px;background-position:18% center;align-items:flex-end;min-height:auto;padding-top:300px}
+  .premium .box{margin:0;padding:36px 24px;background:var(--gold)}
+  .premium ul{grid-template-columns:1fr}
+  .pillars{grid-template-columns:1fr;margin-bottom:80px}
+  .pillar .n{margin-bottom:24px}
+  .story .ph{min-height:260px}
+  .story .tx{padding:36px 24px}
+  .board li{grid-template-columns:64px 1fr}
+  .board .d{display:none}
+  .form{padding:30px 22px}
+  .f-row{grid-template-columns:1fr;gap:0}
+  .foot{grid-template-columns:1fr;gap:32px}
+  .promise{padding:110px 20px}
+}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span class="sym"><img class="wh" src="assets/logo/symbol-white.png" alt=""><img class="dk" src="assets/logo/symbol-dark.png" alt=""></span>
+      (주)세주농업회사법인
+    </a>
+    <nav class="menu" id="menu">
+      <a href="#about">회사소개</a>
+      <a href="#contract">계약재배</a>
+      <a href="#community">농가소통</a>
+      <a href="#support">고객센터</a>
+    </nav>
+    <a class="cta" href="#support" data-type="계약재배">계약재배 상담</a>
+    <button class="burger" id="burger" aria-label="메뉴 열기"><span></span></button>
+  </div>
+</header>
+
+<div class="mmenu" id="mmenu">
+  <button id="mclose" aria-label="닫기">✕</button>
+  <a href="#about">회사소개</a>
+  <a href="#contract">계약재배</a>
+  <a href="#community">농가소통</a>
+  <a href="#support">고객센터</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="top" data-screen-label="01 Hero">
+  <div class="wrap">
+    <div class="eyebrow">여주고구마 계약재배 전문</div>
+    <h1>함께 성장하는<br><b>농업의 미래</b></h1>
+    <p>농가의 땀방울, 최고의 가치로 빛나게.<br>세주농업과 함께, 고구마 재배의 미래를 개척합니다.</p>
+    <div class="hero-keys">
+      <span>안정적인 판로 확보</span><span>시세 변동 위험 감소</span><span>전문적인 재배 컨설팅</span>
+    </div>
+    <div class="btns">
+      <a class="btn btn-g" href="#contract">계약재배 알아보기 →</a>
+      <a class="btn btn-o" href="#about">회사소개</a>
+    </div>
+  </div>
+  <span class="scroll-cue">SCROLL</span>
+</section>
+
+<!-- ABOUT -->
+<section id="about" data-screen-label="02 회사소개">
+  <div class="lede wrap">
+    <img class="sym-mark reveal" src="assets/logo/symbol-dark.png" alt="세주 심벌">
+    <blockquote class="reveal">농가의 땀방울, <b>최고의 가치</b>로 빛나게.<br>세주농업과 함께, 고구마 재배의 미래를 개척합니다.</blockquote>
+  </div>
+
+  <div class="sec wrap" style="padding-top:110px">
+    <div class="s-head reveal">
+      <div>
+        <div class="num">01 회사소개</div>
+        <h2>여주의 땅에서<br><b>명품 고구마</b>를 키웁니다</h2>
+      </div>
+      <p>(주)세주농업회사법인은 경기도 여주를 기반으로 고구마 계약재배와 선별·유통을 함께하는 농업회사법인입니다. 육묘부터 재배 컨설팅, 수매, 콜드체인 유통까지 농가 곁에서 안정적인 동반 성장을 약속합니다.</p>
+    </div>
+
+    <div class="about-intro">
+      <div class="about-photo reveal">
+        <img src="assets/img/greenhouse-team.jpg" alt="세주 육묘 하우스에서 고구마 묘를 관리하는 직원들">
+        <div class="inset"><img src="assets/img/seedling-lab.jpg" alt="고구마 묘 생육 상태를 확인하는 연구원"></div>
+      </div>
+      <div class="values">
+        <div class="value reveal"><div class="n">01</div><div><h4>동반 성장</h4><p>안정적인 판로로 농가의 수익을 지키고, 함께 이익을 나누는 구조를 만듭니다.</p></div></div>
+        <div class="value reveal"><div class="n">02</div><div><h4>건강한 육묘</h4><p>자체 육묘 하우스에서 우량 묘를 길러 재배의 첫 단추부터 품질을 관리합니다.</p></div></div>
+        <div class="value reveal"><div class="n">03</div><div><h4>엄격한 품질</h4><p>농산물 우수관리기준에 따라 선별하고, 위생적인 작업 환경을 지킵니다.</p></div></div>
+        <div class="value reveal"><div class="n">04</div><div><h4>투명한 신뢰</h4><p>문의부터 수확·정산까지 모든 과정을 투명하고 체계적으로 운영합니다.</p></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 우수성 -->
+  <div class="premium reveal">
+    <div class="box">
+      <div class="k">세주 고구마의 우수성</div>
+      <h3>당도 높고 속이 꽉 찬<br><b>명품 여주고구마</b></h3>
+      <p>최적의 토양과 세심한 재배 기술로 키워내 당도 높고 속이 꽉 찬 명품 고구마입니다. 엄격한 품질 관리로 언제나 최상의 맛과 영양을 약속드립니다.</p>
+      <ul><li>최적의 여주 토양</li><li>세심한 재배 기술</li><li>높은 당도</li><li>엄격한 품질 관리</li></ul>
+    </div>
+  </div>
+
+  <!-- 유통 과정 -->
+  <div class="wrap dist">
+    <div class="dist-grid">
+      <div class="dist-copy reveal">
+        <div class="sub-h"><h3>유통 과정</h3><span>COLD CHAIN</span></div>
+        <p class="lead">수확 즉시 선별부터 포장, 배송까지 콜드체인 시스템으로 관리합니다. 전국 주요 대형마트에 신선하게 납품되는 믿을 수 있는 유통 과정을 자랑합니다.</p>
+        <ol class="flow">
+          <li><b>수확</b><span>계약 농가 산지</span></li>
+          <li><b>선별</b><span>우수관리기준 엄격 선별</span></li>
+          <li><b>포장</b><span>위생적인 작업 관리</span></li>
+          <li><b>저온 보관·배송</b><span>콜드체인 시스템</span></li>
+          <li><b>납품</b><span>전국 주요 대형마트</span></li>
+        </ol>
+      </div>
+      <div class="dist-imgs reveal">
+        <img class="big" src="assets/img/sorting.jpg" alt="고구마 선별 작업">
+        <img class="sm" src="assets/img/crates.jpg" alt="선별된 고구마 상자">
+        <div class="note sm"><b>철저한 선별 &amp; 위생적인 가공</b><span>안전하고 건강한 농산물을 위해 위생적인 작업 관리를 하고 있습니다.</span></div>
+      </div>
+    </div>
+  </div>
+  <div style="height:140px"></div>
+</section>
+
+<!-- CONTRACT -->
+<section class="sec contract" id="contract" data-screen-label="03 계약재배">
+  <div class="wrap">
+    <div class="s-head reveal">
+      <div>
+        <div class="num">02 계약재배</div>
+        <h2>시세 걱정 없이<br><b>고품질 재배에만</b> 집중</h2>
+      </div>
+      <p>세주농업회사법인과의 계약재배는 안정적인 판로 확보로 농가의 수익을 극대화합니다. 시세 변동 위험 없이 오직 고품질 재배에만 집중할 수 있도록 돕습니다.</p>
+    </div>
+
+    <div class="sub-h reveal"><h3>계약재배의 가치</h3><span>VALUE</span></div>
+    <div class="pillars reveal">
+      <div class="pillar"><div class="n">01</div><h4>안정적인 판로 확보</h4><p>재배 전에 수매를 약속해 판매 걱정 없이 농가의 수익을 극대화합니다.</p></div>
+      <div class="pillar"><div class="n">02</div><h4>시세 변동 위험 감소</h4><p>사전 계약으로 가격 폭락의 부담을 덜고 안정적인 소득 계획을 세울 수 있습니다.</p></div>
+      <div class="pillar"><div class="n">03</div><h4>전문적인 재배 컨설팅</h4><p>육묘부터 수확까지 전문 인력이 현장을 함께 살피며 품질 향상을 돕습니다.</p></div>
+    </div>
+
+    <div class="sub-h reveal"><h3>계약재배 프로세스</h3><span>PROCESS</span></div>
+    <p class="proc-intro reveal">복잡하게만 느껴졌던 계약재배, 이제 간단한 절차를 통해 안정적인 미래를 시작하세요. 문의부터 수확까지 투명하고 체계적인 과정으로 농가와 함께합니다.</p>
+    <div class="steps reveal">
+      <div class="step"><div class="k">STEP 01</div><h5>문의</h5><p>전화 또는 온라인으로 재배 면적과 희망 시기를 알려 주세요.</p></div>
+      <div class="step"><div class="k">STEP 02</div><h5>현장 상담</h5><p>담당자가 농지를 방문해 토양과 재배 환경을 확인합니다.</p></div>
+      <div class="step"><div class="k">STEP 03</div><h5>계약 체결</h5><p>물량·수매 조건·정산 일정을 투명하게 약정합니다.</p></div>
+      <div class="step"><div class="k">STEP 04</div><h5>재배 컨설팅</h5><p>우량 묘 공급과 정기 현장 지도로 재배를 지원합니다.</p></div>
+      <div class="step"><div class="k">STEP 05</div><h5>수확·수매</h5><p>약정 조건대로 수매하고 약속한 기일에 정산합니다.</p></div>
+    </div>
+
+    <div class="story reveal">
+      <div class="ph" role="img" aria-label="세주 계약 농가의 고구마 밭 정식 작업"></div>
+      <div class="tx">
+        <div class="k">성공 사례 · 농가 인터뷰</div>
+        <blockquote>“세주농업회사법인과의 계약재배로 <b>판로 걱정 없이 안정적인 수익</b>을 얻고 있습니다. 전문적인 재배 컨설팅 덕분에 고구마 품질도 향상되어 만족도가 매우 높습니다.”</blockquote>
+        <div class="who"><i>임</i><div><b>임승기 농가</b><span>세주 고구마 계약재배 농가</span></div></div>
+      </div>
+    </div>
+
+    <div class="btns">
+      <a class="btn btn-g" href="#support" data-type="계약재배">계약재배 상담 신청 →</a>
+      <a class="btn btn-o" href="tel:01047615327">전화 상담 010.4761.5327</a>
+    </div>
+  </div>
+</section>
+
+<!-- COMMUNITY -->
+<section class="sec" id="community" data-screen-label="04 농가소통">
+  <div class="wrap">
+    <div class="s-head reveal">
+      <div>
+        <div class="num">03 농가소통</div>
+        <h2>경험을 나누며<br><b>함께 성장</b>합니다</h2>
+      </div>
+      <p>재배 노하우부터 시장 정보까지, 경험 많은 농가들과 소통하며 함께 성장합니다. 궁금증은 언제든 질문하고, 성공적인 재배 팁을 얻어가세요.</p>
+    </div>
+
+    <div class="comm-grid">
+      <div class="reveal">
+        <div class="tabs" id="tabs">
+          <button class="on" data-tab="notice">공지사항</button>
+          <button data-tab="tip">재배 노하우</button>
+          <button data-tab="market">시장 정보</button>
+          <button data-tab="qna">질문과 답변</button>
+        </div>
+        <ul class="board" id="board"></ul>
+        <a class="board-more" href="#">전체 게시글 보기 →</a>
+      </div>
+
+      <div class="side">
+        <div class="scard img reveal">
+          <h4>계약 농가 전용 공간</h4>
+          <p>재배 일지, 정산 내역, 수매 일정을 한눈에 확인하세요.</p>
+          <a class="lnk" href="#">농가 로그인</a>
+        </div>
+        <div class="scard reveal">
+          <h4>궁금한 점이 있으신가요?</h4>
+          <p>재배 중 어려움이나 개선 의견을 남겨 주세요. 담당자와 경험 많은 농가가 함께 답해 드립니다.</p>
+          <a class="lnk" href="#support" data-type="농가소통">질문 남기기</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMISE -->
+<section class="promise" data-screen-label="05 약속">
+  <img class="sym-mark reveal" src="assets/logo/symbol-white.png" alt="">
+  <h2 class="reveal">안정적인 동반 성장,<br><b>세주농업회사법인</b>이 약속합니다.</h2>
+  <p class="reveal">간단한 절차를 통해 안정적인 미래를 시작하세요.</p>
+  <cite class="reveal">— 세주 임직원 일동</cite>
+</section>
+
+<!-- SUPPORT -->
+<section class="sec support" id="support" data-screen-label="06 고객센터">
+  <div class="wrap">
+    <div class="s-head reveal">
+      <div>
+        <div class="num">04 고객센터</div>
+        <h2>무엇이든<br><b>편하게 물어보세요</b></h2>
+      </div>
+      <p>계약재배 상담, 고구마 납품·구매 문의, 농가 의견까지 한 곳에서 접수합니다. 남겨 주신 문의는 담당자가 확인 후 빠르게 연락드립니다.</p>
+    </div>
+
+    <div class="sup-grid">
+      <div class="reveal">
+        <div class="call">
+          <div class="lbl">상담 전화</div>
+          <a class="tel" href="tel:01047615327">010.4761.5327</a>
+          <div class="hrs">평일 09:00 – 18:00 · 주말 및 공휴일 휴무</div>
+        </div>
+        <dl class="info">
+          <div><dt>팩스</dt><dd>031-883-9457</dd></div>
+          <div><dt>이메일</dt><dd><a href="mailto:sangjun1@hotmail.com">sangjun1@hotmail.com</a></dd></div>
+          <div><dt>주소</dt><dd>경기도 여주시 북내면 신접1길 29-19</dd></div>
+          <div><dt>웹사이트</dt><dd>www.sejufarm.com</dd></div>
+        </dl>
+        <div class="faq">
+          <h3>자주 묻는 질문</h3>
+          <details open><summary>계약재배는 어떤 농가가 참여할 수 있나요?</summary><p>고구마 재배가 가능한 농지를 보유하거나 임차 중인 농가라면 규모와 관계없이 상담하실 수 있습니다. 현장 상담 후 함께 계획을 세웁니다.</p></details>
+          <details><summary>수매 조건은 언제 정해지나요?</summary><p>재배 시작 전 계약 체결 단계에서 물량과 수매 조건, 정산 일정을 약정하므로 시세 변동 위험을 줄일 수 있습니다.</p></details>
+          <details><summary>재배 경험이 적어도 참여할 수 있나요?</summary><p>네. 우량 묘 공급과 정기 현장 컨설팅으로 처음 시작하시는 농가도 고품질 재배가 가능하도록 지원합니다.</p></details>
+          <details><summary>고구마 납품·구매 문의도 가능한가요?</summary><p>대형마트 및 유통업체 납품, 대량 구매 문의 모두 가능합니다. 온라인 문의에서 ‘납품·구매’를 선택해 주세요.</p></details>
+        </div>
+      </div>
+
+      <div class="form reveal" id="formBox">
+        <h3>온라인 문의</h3>
+        <p>항목을 작성해 주시면 담당자가 연락드립니다.</p>
+        <form id="form">
+          <div class="field">
+            <label>문의 유형</label>
+            <div class="chips">
+              <label><input type="radio" name="type" value="계약재배" checked><span>계약재배</span></label>
+              <label><input type="radio" name="type" value="납품·구매"><span>납품·구매</span></label>
+              <label><input type="radio" name="type" value="농가소통"><span>농가소통</span></label>
+              <label><input type="radio" name="type" value="기타"><span>기타</span></label>
+            </div>
+          </div>
+          <div class="f-row">
+            <div class="field"><label for="nm">성함 / 농가명</label><input id="nm" required placeholder="홍길동"></div>
+            <div class="field"><label for="ph">연락처</label><input id="ph" required type="tel" placeholder="010-0000-0000"></div>
+          </div>
+          <div class="f-row">
+            <div class="field"><label for="rg">지역</label><input id="rg" placeholder="예) 경기 여주시"></div>
+            <div class="field"><label for="ar">재배 면적</label><input id="ar" placeholder="예) 3,000평"></div>
+          </div>
+          <div class="field"><label for="msg">문의 내용</label><textarea id="msg" placeholder="희망 시기, 재배 경험 등 자유롭게 적어 주세요."></textarea></div>
+          <label class="agree"><input type="checkbox" required> 개인정보 수집 및 이용에 동의합니다. (필수)</label>
+          <button class="btn btn-d" type="submit">문의 접수하기 →</button>
+        </form>
+        <div class="sent"><b>문의가 접수되었습니다.</b><p style="color:var(--body)">영업일 기준 1~2일 내에 담당자가 연락드리겠습니다.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="flogo"><img src="assets/logo/symbol-white.png" alt="">(주)세주농업회사법인</div>
+        <p>함께 성장하는 농업의 미래<br>경기도 여주시 북내면 신접1길 29-19<br>Tel 010.4761.5327 · Fax 031-883-9457<br>sangjun1@hotmail.com · www.sejufarm.com</p>
+      </div>
+      <div><h5>바로가기</h5><a href="#about">회사소개</a><a href="#contract">계약재배</a><a href="#community">농가소통</a><a href="#support">고객센터</a></div>
+      <div><h5>고객 지원</h5><a href="#support">온라인 문의</a><a href="#support">자주 묻는 질문</a><a href="#">개인정보처리방침</a><a href="#">이용약관</a></div>
+    </div>
+    <div class="copy"><span>© 2026 (주)세주농업회사법인. All rights reserved.</span><span>SEJU AGRICULTURAL CORPORATION</span></div>
+  </div>
+</footer>
+
+<script>
+const nav=document.getElementById('nav');
+const onScroll=()=>{
+  nav.classList.toggle('scrolled',scrollY>50);
+  let cur='';
+  ['about','contract','community','support'].forEach(id=>{if(document.getElementById(id).getBoundingClientRect().top<160)cur=id});
+  document.querySelectorAll('#menu a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+cur));
+};
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+const io=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('in')),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+const mm=document.getElementById('mmenu');
+document.getElementById('burger').onclick=()=>mm.classList.add('open');
+document.getElementById('mclose').onclick=()=>mm.classList.remove('open');
+mm.querySelectorAll('a').forEach(a=>a.onclick=()=>mm.classList.remove('open'));
+
+const posts={
+  notice:[['중요','2027년 고구마 계약재배 참여 농가 모집 안내','2026.11.20',1],['공지','가을 수확분 수매 및 정산 일정 안내','2026.11.12'],['공지','동절기 저온저장고 운영 안내','2026.11.03'],['공지','봄 육묘 신청 접수 사전 안내','2026.10.27']],
+  tip:[['노하우','고구마 묘 정식 후 활착률 높이는 관리법','2026.11.18'],['노하우','수확 후 큐어링으로 저장성 높이기','2026.11.08'],['노하우','당도를 높이는 토양 관리와 시비 요령','2026.10.24'],['노하우','덩굴쪼김병 예방을 위한 윤작 관리','2026.10.10']],
+  market:[['시장','11월 고구마 도매 시세 동향','2026.11.21'],['시장','대형마트 고구마 소비 트렌드 정리','2026.11.06'],['시장','저장 고구마 출하 시기별 가격 흐름','2026.10.20']],
+  qna:[['Q&A','첫해 재배인데 묘는 언제 신청해야 하나요?','2026.11.19'],['Q&A','수확 시기 판단 기준이 궁금합니다','2026.11.02'],['Q&A','계약 물량보다 수확이 적으면 어떻게 되나요?','2026.10.18']]
+};
+const board=document.getElementById('board');
+const render=k=>board.innerHTML=posts[k].map(([c,t,d,h])=>`<li><span class="cat${h?' hot':''}">${c}</span><span class="t">${t}</span><span class="d">${d}</span></li>`).join('');
+render('notice');
+document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('#tabs button').forEach(x=>x.classList.remove('on'));b.classList.add('on');render(b.dataset.tab);
+});
+
+document.querySelectorAll('[data-type]').forEach(a=>a.addEventListener('click',()=>{
+  const r=document.querySelector(`input[name=type][value="${a.dataset.type}"]`);if(r)r.checked=true;
+}));
+document.getElementById('form').addEventListener('submit',e=>{e.preventDefault();document.getElementById('formBox').classList.add('done')});
+</script>
+</body>
+</html>
